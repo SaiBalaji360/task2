@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Restaurant - The Best Quality Restaurant in the town</title>   
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .navbar li {
+        list-style: none;
+        margin: 0 12px;
+    }
+
+    .topleft {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .topright {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .section1 {
+        color: #711e15;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .section1 h1 {
+        color: #37110d;
+        font-size: 2rem;
+    }
+
+    .dumbellimg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .topright .Tiffins {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section2 {
+        padding: 50px 0;
+    }
+
+    .section2 h1 {
+        font-size: 2.3rem;
+    }
+
+    .section2 p {
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        flex: 1 1 300px;
+        margin: 12px;
+        padding: 20px;
+        border: 2px solid rgb(120, 54, 16);
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .box h2 {
+        font-size: 2rem;
+        padding: 15px 0;
+    }
+
+    .highlighted {
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+
+    .box ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .box ul li {
+        margin: 12px 2px;
+    }
+
+    .plantable {
+        overflow-x: auto;
+    }
+
+    .section3 {
+        padding: 50px 0;
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 40px;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        border-bottom: 2px solid black;
+        padding: 15px 0;
+    }
+
+    footer {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border: 2px solid white;
+        border-radius: 6px;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(227 74 56);
+    }
+
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .topleft,
+        .topright {
+            width: 100%;
+        }
+
+        .box {
+            flex: 1 1 100%;
+        }
+    }
+</style>
+</head>
+<body class='overflow-x-hidden'>
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue">Rose Restaurant</div>
+                <ul class="navbar flex items-center">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><button class="btn">Join Now</button></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main class="min-h-screen">
+            <section class="section1">
+                <div class="flex">
+                    <div class="topleft flex flex-col justify-center px-2">
+                        <div class=" text-center">
+                            <img class="dumbellimg" src="image1.jpg" alt="">
+                        </div>
+                        <h1 class="my-1 text-center">The Best Quality Restaurant in the town is here</h1>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+                            error corporis fugit dolore adipisci aperiam omnis nisi dolores hic eius in ex id iure, ea
+                            sunt asperiores et voluptatibus dignissimos autem maiores molestias dolor rem delectus
+                            quidem! Inventore.</p>
+                        <p class="deal text-center">The deal ends in <span id="demo"></span></p>
+                        <div class="buttons">
+                            <button class="btn">Join now</button>
+                            <button class="btn">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="section2">
+                <h1 class="text-center my-2">Pricing</h1>
+                <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi debitis provident
+                    suscipit temporibus modi voluptatem. Assumenda aspernatur ad nihil quasi expedita eligendi atque?
+                    Dolorum eum deserunt dicta iste beatae commodi, doloribus expedita hic recusandae, tempora illum
+                    consequuntur? Necessitatibus voluptate animi repellendus reiciendis!</p>
+                <div class="boxes flex justify-center">
+                    <div class="box">
+                        <h2>Tiffins</h2>
+                        <ul>
+                            <li class="highlighted"></li>
+                            <li>Idly - 50.00</li>
+                            <li>Dosa -  30.00</li>
+                            <li>Onion Dosa - 35.00</li>
+                            <li>Masala Dosa - 40.00</li>
+                            <li>Chapathi - 40.00</li>
+                            <li>Parota - 45.00</li>
+                            <li><button class="btn">Rate & More</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Veg meals</h2>
+                        <ul>
+                            <li class="highlighted"></li>
+                            <li>Panner Butter Masala - 190.00</li>
+                            <li>Kaju Tomato Curry - 200.00</li>
+                            <li>Kadai Veg - 180.00</li>
+                            <li>Kadai Panner - 190.00</li>
+                            <li>Chettinadu veg - 190.00</li>
+                            <li>Methi Chaman -200.00</li>
+                            <li><button class="btn">Rate & More</button></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Non-Veg Meals</h2>
+                        <ul>
+                            <li class="highlighted"></li>
+                            <li>Egg Masala - 150.00</li>
+                            <li>Butter Chicken - 200.00</li>
+                            <li>Kadai Chicken - 200.00</li>
+                            <li>Chettinadu Chicken - 210.00</li>
+                            <li>Chicken Kolhapuri -220.00</li>
+                            <li>Fish Curry - 230.00</li>
+                            <li><button class="btn">Rate & More</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="section3">
+                <h1 class="text-center my-2">Special Offers</h1>
+                <p class="my-2">Check out our latest special offers and discounts. Don't miss the chance to enjoy our delicious meals at unbeatable prices!</p>
+                <div class="plantable">
+                    <table>
+                        <tr>
+                            <th>Offer</th>
+                            <th>Details</th>
+                            <th>Validity</th>
+                        </tr>
+                        <tr>
+                            <td>Lunch Special</td>
+                            <td>50% off on select veg meals</td>
+                            <td>October 28, 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Dinner Deal</td>
+                            <td>Free dessert with every non-veg meal</td>
+                            <td>November 5, 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Weekend Bonanza</td>
+                            <td>Special combo offers for families</td>
+                            <td>November 12, 2023</td>
+                        </tr>
+                    </table>
+                </div>
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Name" required><br><br>
+                    <input type="email" id="email" placeholder="Email" required><br><br>
+                    <textarea id="message" placeholder="Message" required></textarea><br><br>
+                    <input type="submit" value="Submit" class="btn">
+                </form>
+                <img id="slideshow" src="image1.jpg" alt="slideshow" style="width: 100%; height: auto; display: none;">
+            </section>
+            <footer>
+                Copyright &copy; RoseRestaurant.com | All rights reserved
+            </footer>
+        </main>      
+        <script>
+            var countDownDate = new Date("Jun 5, 2022 15:37:25").getTime();
+var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        validateForm();
+    });
+
+    function validateForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (name === '' || email === '' || message === '') {
+            alert('Please fill in all fields.');
+        } else if (!validateEmail(email)) {
+            alert('Please enter a valid email address.');
+        } else {
+            alert('Form submitted successfully!');
+            form.reset();
+        }
+    }
+
+    function validateEmail(email) {
+        const re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+});
+
+// Image Slideshow
+const images = ['image1.jpg']; // Replace with actual image paths
+let currentIndex = 0;
+const imgElement = document.getElementById('slideshow');
+
+function changeImage() {
+    imgElement.src = images[currentIndex];
+    currentIndex = (currentIndex + 1) % images.length;
+}
+
+setInterval(changeImage, 3000); // Change image every 3 seconds
+
+        </script>
+</body>
+</html>
